@@ -1,0 +1,16 @@
+static/
+├── css/
+│   ├── style.css       (main styles)
+│   └── animations.css  (for special effects)
+├── js/
+│   ├── script.js       (main functionality)
+│   └── voice.js        (voice-specific code)
+├── img/
+│   ├── logo.png        (ALEX logo)
+│   ├── bg.jpg          (background)
+│   └── icons/          (various icons)
+└── templates/
+    ├── index.html      (main page)
+    └── components/     (UI components)
+        ├── header.html
+        └── chat.html
