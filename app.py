@@ -135,7 +135,7 @@ def get_weather(city: str = "Rajkot") -> str:
 def search_wikipedia(query: str) -> str:
     try:
         wikipedia.set_lang("en")
-        result = wikipedia.summary(query, sentences=2, auto_suggest=False)
+        result = wikipedia.summary(query, sentences=2, auto_suggest=True)
         return result
     except Exception:
         return "I couldn't find anything on Wikipedia."

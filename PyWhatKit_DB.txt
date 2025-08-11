@@ -23,3 +23,13 @@ Time: 12:48
 Phone Number: +919313731254
 Message: Hello from ALEX!
 --------------------
+Date: 31/7/2025
+Time: 12:7
+Phone Number: +919313731254
+Message: Hello from NEXA!
+--------------------
+Date: 31/7/2025
+Time: 12:25
+Phone Number: +919313731254
+Message: Hello from NEXA!
+--------------------
