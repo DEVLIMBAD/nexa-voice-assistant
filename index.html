@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NEXA - Your Voice Assistant</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="/nexa-voice-assistant/static/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
         <!-- Header Section -->
         <header class="app-header">
             <div class="logo">
-                <img src="{{ url_for('static', filename='img/logo2.png') }}" alt="NEXA Logo">
+                <img src="static/img/logo2.png"alt="NEXA Logo">                
                 <h1>NEXA</h1>
             </div>
             <div class="status-indicator">
@@ -71,7 +71,7 @@
         </div>
     </div>
 
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/voice.js') }}"></script>
+    <script src="static/js/script.js"></script>
+    <script src="static/js/voice.js"></script>
 </body>
 </html>
