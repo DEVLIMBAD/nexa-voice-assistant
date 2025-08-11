@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXA - Your Voice Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header Section -->
+        <header class="app-header">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='img/logo2.png') }}" alt="NEXA Logo">
+                <h1>NEXA</h1>
+            </div>
+            <div class="status-indicator">
+                <span class="pulse-dot"></span>
+                <span>Ready</span>
+            </div>
+        </header>
+
+        <!-- Main Chat Interface -->
+        <main class="chat-container">
+            <div class="chat-history" id="chatHistory">
+                <!-- Messages will appear here -->
+                <div class="assistant-message">
+                    <div class="avatar">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="message-content">
+                        <p>Hello! I'm NEXA, your voice assistant. How can I help you today?</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="input-area">
+                <div class="voice-controls">
+                    <button id="voiceButton" class="voice-btn">
+                        <i class="fas fa-microphone"></i>
+                    </button>
+                    <div class="wave-animation hidden" id="waveAnimation">
+                        <span class="wave-dot"></span>
+                        <span class="wave-dot"></span>
+                        <span class="wave-dot"></span>
+                    </div>
+                </div>
+                <input type="text" id="userInput" placeholder="Type your command or click the mic..." autocomplete = on>
+                <button id="sendButton" class="send-btn">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </main>
+
+        <!-- Quick Commands -->
+        <div class="quick-commands">
+            <button class="quick-btn" data-command="what's the time">
+                <i class="far fa-clock"></i> Time
+            </button>
+            <button class="quick-btn" data-command="what's the weather">
+                <i class="fas fa-cloud-sun"></i> Weather
+            </button>
+            <button class="quick-btn" data-command="open youtube">
+                <i class="fab fa-youtube"></i> YouTube
+            </button>
+            <button class="quick-btn" data-command="play despacito">
+                <i class="fas fa-music"></i> Play Music
+            </button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/voice.js') }}"></script>
+</body>
+</html>
